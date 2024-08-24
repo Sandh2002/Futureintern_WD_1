@@ -1,0 +1,184 @@
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 100px 20px;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+#features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature-item {
+    margin-bottom: 30px;
+}
+
+#about, #contact {
+    padding: 50px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Revv Cars</h1>
+            <p>Hassle Free Car Booking</p>
+            <a href="#signup" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <h3>Book cars</h3>
+                <p>You can book cars for days or for hours as per your need.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Early Booking Available</h3>
+                <p>You can book cars early or at the time</p>
+            </div>
+            <div class="feature-item">
+                <h3>Reasonable Price</h3>
+                <p>Book cars at reasonable price at just 2000Rs/day</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Revv cars is a car rental website in which you can book a car for days or for hours as per your need..Online payment also available..
+                Book car At just 2000rs/day.....Car rental agencies primarily serve people 
+                who require a temporary vehicle, for example, those who do not own their own car, travelers who are out of town, or owners of damaged or destroyed vehicles who are awaiting repair or insurance compensation.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sandhya Bhadouriya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
